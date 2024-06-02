@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GD Games</title>
+    <link rel="stylesheet" href="css/checkout.css">
+    <link rel="stylesheet" href="css/common.css">
+    <script src="js/checkout.js"></script>
+    <script src="js/common.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="sidebar" id="sidebar">            
+            <button id="sidebarToggle"></button>
+            <div class="sidebar-content">
+                <div class="s-img">
+                    <image class="timg" src="image/logo.png"></image>
+                </div>
+                <div class="hmiddle">
+                    <nav>
+                        <ul>
+                            <li class='sidebar-item'><a href="Home.html" style="font-weight: 900;">HOME</a></li>
+                            <li class='sidebar-item'><a href="Game.html">GAMES</a></li>
+                            <li class='sidebar-item'><a href="#">CONSOLES</a></li>
+                            <li class='sidebar-item'><a href="#">NEWS</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="action-icon">
+                    <img src="image/upDown.svg" alt="Compare icon">
+                    <span>Compare</span>
+                </div>
+                <div class="action-icon">
+                    <img src="image/question.svg" alt="Ask a question icon">
+                    <span>Ask a question</span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <image class="timg" src="image/logo.png"></image>
+            <header class="section-title">Check Out</header>
+            <section class="main-content">
+                <div class="left-col">
+                    <div class="left-item">
+                        <span class="contact-title">Contact</span>
+                        <div class="account-context"><span class="account-text">Have an account?</span>
+                            <a href="#" class="account-link">
+                                <span class="account-link-text">Create Account</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="left-item">
+                        <input class="input-field" placeholder="Email Address" />
+                    </div>
+                    <div class="left-item">
+                        <span class="contact-title">Delivery</span>
+                    </div>
+                    <div class="left-item">
+                        <select class="input-field">
+                            <option value="option1" selected>Country / Region</option>
+                            <option value="option2">Option 2</option>
+                            <option value="option3">Option 3</option>
+                            <option value="option4">Option 4</option>
+                        </select>
+                    </div>
+                    <div class="left-item">
+                        <input type="text" id="firstName" class="input-field-sub" placeholder="First Name" />
+                        <input type="text" id="lastName" class="input-field-sub" placeholder="Last Name" />
+                    </div>
+                    <div class="left-item">
+                        <input class="input-field" placeholder="Address" />
+                    </div>
+                    <div class="left-item">
+                        <input type="text" id="City" class="input-field-sub" placeholder="City" />
+                        <input type="text" id="Postal Code" class="input-field-sub" placeholder="Postal Code" />
+                    </div>
+
+                    <div class="left-item">
+
+                        <div class="save-payment-info">
+                            <input type="checkbox" class="payment-checkbox" id="savePaymentInfo">
+                            <label for="savePaymentInfo" class="payment-checkbox-label">Save This Info for
+                                future</label>
+                        </div>
+                    </div>
+                    <div class="left-item">
+                        <span class="contact-title" style="margin-bottom: 10px;">Payment</span>
+                    </div>
+                    <div class="left-item">
+                        <select class="input-field-img">
+                            <option value="option1" selected>Credit Card</option>
+                            <option value="option2">Option 2</option>
+                            <option value="option3">Option 3</option>
+                            <option value="option4">Option 4</option>
+                        </select>
+                    </div>
+                    <div class="left-item">
+                        <div class="payment-details">
+                            <div class="card-details">
+                                <input type="text" id="cardNumber" class="input-field-img"
+                                    style="background: url('../image/lock.svg') no-repeat scroll right center transparent;"
+                                    placeholder="Card Number" />
+                            </div>
+                            <div class="expiry-cvc-fields">
+                                <input type="text" id="expiry" class="input-field-sub" placeholder="Expiration Date" />
+                                <input type="text" id="cvc" class="input-field-sub" placeholder="Security Code" />
+                            </div>
+                            <input type="text" id="cardHolder" class="input-field" placeholder="Card Holder Name" />
+                            <div class="save-payment-info">
+                                <input type="checkbox" class="payment-checkbox" id="savePaymentInfo">
+                                <label for="savePaymentInfo" class="payment-checkbox-label">Save This Info for
+                                    future</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="left-item">
+                        <div class="cart-item">
+                            <img loading="lazy" src="image/cart-img1.png" class="game-thumbnail" />
+                            <div class="game-title">Cyberpunk 2077</div>
+                            <div id="quantity" class="game-title">1</div>
+                            <div class="subtotal">$59.00</div>
+                        </div>
+                        <div class="cart-item">
+                            <img loading="lazy" src="image/cart-img2.png" class="game-thumbnail" />
+                            <div class="game-title">The Last Of US II</div>
+                            <div id="quantity" class="game-title">1</div>
+                            <div class="subtotal">$39.00</div>
+                        </div>
+
+                    </div>
+                    <div class="left-item">
+                        <button class="apply-button">Apply</button>
+                        <div class="action-buttons">
+                            <div class="total-container">
+                                <div class="shipping">
+                                    <div >Subtotal</div>
+                                    <div class="total">$98.00</div>
+                                </div>
+                                <div class="shipping">
+                                    <div class="subtotal">Shipping</div>
+                                    <div >$10.00</div>
+                                </div>
+                                <div class="shipping">
+                                    <div class="subtotal">Total</div>
+                                    <div class="Alltotal">$108.00</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="left-item">
+                        <button class="pay-now-button">Pay Now</button>
+                    </div>
+                </div>
+            </section>
+
+    </main>
+
+    <footer>
+        <div class="tab-bar">
+            <div class="tab-item active" onclick="GoTo(0)" data-tab="home"><img src="image/Shape (3).png" /></div>
+            <div class="tab-item" onclick="GoTo(1)" data-tab="discover"><img src="image/Group 9.png" /></div>
+            <div class="tab-item" onclick="GoTo(2)" data-tab="mine"><img src="image/Shape (2).png" /></div>
+            <div class="tab-item" onclick="GoTo(3)" data-tab="discover"><img src="image/Shape (1).png" /></div>
+            <div class="tab-item" onclick="GoTo(4)" data-tab="mine"><img src="image/Shape.png" /></div>
+        </div>
+    </footer>

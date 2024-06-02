@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GD Games</title>
+    <link rel="stylesheet" href="css/goodDetails.css">
+    <script src="js/goodDetails.js"></script>
+</head>
+
+<body>
+    <header>
+        <div>
+            <div class="hleft">
+                <image class="timg" src="image/logo.png"></image>
+            </div>
+            <div class="hmiddle">
+                <nav>
+                    <ul>
+                        <li><a href="Home.html" style="font-weight: 900;">HOME</a></li>
+                        <li><a href="Game.html" >GAMES</a></li>
+                        <li><a href="#">CONSOLES</a></li>
+                        <li><a href="#">NEWS</a></li>
+                    </ul>
+                </nav>
+                <div class="search-container">
+                    <input type="text" id="search-box" placeholder="Search...">
+                    <button type="button" id="search-button">
+                    </button>
+                </div>
+            </div>
+            <div class="hright">
+                <image style="margin-right: 20px;" src="image/user.png"></image>
+                <image src="image/car.png" id="openCart"></image>
+            </div>
+
+        </div>
+    </header>
+    <!-- ShoppingCart -->
+    <div id="cartPopup" class="cart-popup">
+        <!-- <div style="margin-top: -50px;"><img src="image/cart-title.png"/></div> -->
+        <div class="cart-header">
+            <div class="items-num">2 item</div>
+            <div id="closeCart">X</div>
+        </div>
+        <div class="cart-item">
+            <div class="item-image">
+                <img src="image/cart-img1.png" alt="Product Image">
+            </div>
+            <div class="item-details">
+                <p>Cyberpunk 2077</p>
+                <p>$59.00</p>
+                <div class="quantity-controls">
+                    <button class="decrease">-</button>
+                    <input type="number" id="quantity" value="1" min="1" readonly>
+                    <button class="increase">+</button>
+                    <button class="remove" style="color: blue;">Remove</button>
+                </div>
+            </div>
+        </div>
+        <div class="cart-item">
+            <div class="item-image">
+                <img src="image/cart-img2.png" alt="Product Image">
+            </div>
+            <div class="item-details">
+                <h3>The Last Of US II</h3>
+                <p>$39.00</p>
+                <div class="quantity-controls">
+                    <button class="decrease">-</button>
+                    <input type="number" id="quantity" value="1" min="1" readonly>
+                    <button class="increase" click="increaseQuantity(event)">+</button>
+                    <button class="remove" style="color: blue;">Remove</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="cart-footer">
+            <p>Sub-total: <span class="subtotal">$98.00</span></p>
+            <a id="viewBag" href="ShoppingCart.html">View Bag</a>
+            <a style="background-color:#6D9DD4 ;" id="checkout" href="CheckOut.html">Checkout</a>
+            <p>Free shipping worldwide</p>
+        </div>
+    </div>
+    <main>
+        <div class="container">            
+            <section class="main-content">
+                <div class="left-col">
+                    <div class="image-list">
+                        <!-- image list -->
+                        <image src="image/cart-img21.png" class="thumbnail" alt="Image 1" data-full="image/cart-img21.png" />
+                        <image src="image/cart-img2.png" class="thumbnail" alt="Image 1" data-full="image/cart-img2.png" />
+                        <image src="image/cart-img22.png" class="thumbnail" alt="Image 1" data-full="image/cart-img22.png" />
+                        <image src="image/cart-img23.png" class="thumbnail" alt="Image 1" data-full="image/cart-img23.png" />
+                        <image src="image/cart-img24.png" class="thumbnail" alt="Image 1" data-full="image/cart-img24.png" />
+                        <image src="image/cart-img25.png" class="thumbnail" alt="Image 1" data-full="image/cart-img25.png" />
+                        <!-- more image -->
+                    </div>
+                    <div class="image-display">
+                        <!-- Large Image Display Area -->
+                        <image src="image/cart-img2.png" alt="" id="full-image" class="full-image">
+                    </div>  
+                </div>
+                <div class="right-col">
+                    <div class="product-info">
+                        <h2 class="label">Playstation</h2>
+                        <h1 class="product-title">The Last Of US II</h1>
+                        <div class="rating">
+                            <img src="image/star-black.svg" alt="Rating stars" class="rating-icon">
+                             <div class="review-count">
+                                <span class="review-count-text">(</span>
+                                <span class="review-number">3</span>
+                                <span class="review-count-text">)</span>
+                            </div>
+                        </div>
+                        <div class="price">$39.00</div>
+                        <div class="stock-info">
+                            <img src="image/eye.svg" alt="Stock icon" class="stock-icon">
+                            <div class="stock-message">20 people are viewing this right now</div>
+                        </div>
+                        <div class="remaining-items">
+                            <span>Only</span> 
+                            <strong>9</strong>
+                            <span>item(s) left in stock!</span>
+                        </div>
+                        <div class="stock-bar-container">
+                            <div class="stock-bar"></div>
+                        </div>
+                        <label class="quantity-label" for="quantity">Quantity</label>
+                        <div class="add-to-cart">
+                            <div class="quantity-controls" style="border: 1px solid #ddd;padding: 5px;">
+                                <button class="decrease" >-</button>
+                                <input type="number" style="border: none;" id="quantity" value="1" min="1" readonly>
+                                <button class="increase">+</button>
+                            </div>
+                            <button class="cart-button" onclick="openCart()">Add to cart</button>
+                        </div>
+                        <div class="action-icons">
+                            <div class="action-icon">
+                                <img src="image/upDown.svg" alt="Compare icon">
+                                <span>Compare</span>
+                            </div>
+                            <div class="action-icon">
+                                <img src="image/question.svg" alt="Ask a question icon">
+                                <span>Ask a question</span>
+                            </div>
+                            <div class="action-icon">
+                                <img src="image/share.svg" alt="Share icon">
+                                <span>Share</span>
+                            </div>
+                        </div>
+                        <div class="delivery">
+                            <img src="image/car.svg" alt="Delivery icon">
+                             <div class="delivery-details">
+                                <span class="delivery-estimate">Estimated Delivery:</span>
+                                <span class="delivery-date">Jul 30 - Aug 03</span>
+                            </div>
+                        </div>
+                        <div class="shipping-info">
+                            <img src="image/box.svg" alt="Shipping icon">
+                            <div>Free Shipping & Returns: On all orders over $75</div>
+                        </div>
+                         <div class="shipping-logo">
+                            <img src="image/banks.png" alt="Guarantee safe & secure checkout">         
+                            <div>Guarantee safe & secure checkout</div>
+                        </div> 
+                    </div>
+                    
+                </div>
+            </section>
+
+    </main>
+
+    <footer>
+        <div class="hleft" style="width: 50%;">
+            <image class="timg" src="image/logo.png"></image>
+        </div>
+        <div class="hmiddle"  style="width: 48%;">
+            <nav>
+                <ul>
+                    <li><a href="#home">Support Center</a></li>
+                    <li><a href="#games">Invoicing</a></li>
+                    <li><a href="#consoles">Contract</a></li>
+                    <li><a href="#news">Careers</a></li>
+                    <li><a href="#news">Blog</a></li>
+                    <li><a href="#news">FAQ,s</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div style="width: 100%; text-align: center;float: left; font-size: 14px;">
+           <p > 2024.04.19 UoM Ass2 Yunheng M</p>
+        </div>      
+
+    </footer>
+
+
+    <!-- <script src="script.js"></script> -->
+</body>
+
+</html>

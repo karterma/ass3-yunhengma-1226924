@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GD Games</title>
+    <link rel="stylesheet" href="css/home.css">
+    <script src="js/home.js"></script>
+    <link rel="stylesheet" href="css/common.css">
+    <script src="js/common.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="sidebar" id="sidebar">
+            <button id="sidebarToggle"></button>
+            <div class="sidebar-content">
+              <div class="s-img">
+                <image class="timg" src="image/logo.png"></image>
+              </div>
+              <div class="hmiddle">
+                <nav>
+                  <ul>
+                    <li class='sidebar-item'><a href="Home.html" style="font-weight: 900;">HOME</a></li>
+                    <li class='sidebar-item'><a href="Game.html">GAMES</a></li>
+                    <li class='sidebar-item'><a href="#">CONSOLES</a></li>
+                    <li class='sidebar-item'><a href="#">NEWS</a></li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="action-icon">
+                <img src="image/upDown.svg" alt="Compare icon">
+                <span>Compare</span>
+              </div>
+              <div class="action-icon">
+                <img src="image/question.svg" alt="Ask a question icon">
+                <span>Ask a question</span>
+              </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="gallery-container">
+            <image class="timg" src="image/logo.png"></image>
+            <div class="image-display">
+                <!-- Large Image Display Area -->
+                <image src="image/img1.png" alt="" id="full-image" class="full-image">
+            </div>            
+        </div>
+
+        <div class="products">
+            <h2 style="margin-top: 10px;">MOST POPULAR GAMES</h2>
+            <section class="products-container">
+                <article class="product-card">
+                    <img onclick="GotoDetail(0)" src="image/good-img1.png"
+                        alt="Cyberpunk 2077 cover image" class="product-image" />
+                    <div class="product-details">
+                        <div>
+                            <h3>Cyberpunk 2077</h3>
+                            <p class="p3">(4.1k) Customer Reviews</p>
+                            <p>$59.00</p>
+                        </div>
+                        <div>
+                            <img src="image/star.svg"
+                                alt="Product details icon 1" />
+                        </div>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <img onclick="GotoDetail(1)" src="image/game3.png" alt="The Last Of US II cover image" class="product-image" />
+                    <div class="product-details">
+                        <div>
+                            <h3>The Last Of US II</h3>
+                            <p class="p3">(4.1k) Customer Reviews</p>
+                            <p>$39.00</p>
+                        </div>
+                        <div>
+                            <img src="image/star.svg"
+                                alt="Product details icon 1" />
+                        </div>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <img  src="image/game4.png" alt="The Last Of US II cover image" class="product-image" />
+                    <div class="product-details">
+                        <div>
+                            <h3>Horizon Forbidden</h3>
+                            <p class="p3">(4.1k) Customer Reviews</p>
+                            <p>$95.50</p>
+                        </div>
+                        <div>
+                            <img src="image/star.svg"
+                                alt="Product details icon 1" />
+                        </div>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <img  src="image/game5.png" alt="The Last Of US II cover image" class="product-image" />
+                    <div class="product-details">
+                        <div>
+                            <h3>The Elder ScrollsV</h3>
+                            <p class="p3">(4.1k) Customer Reviews</p>
+                            <p>$49.00</p>
+                        </div>
+                        <div>
+                            <img src="image/star.svg"
+                                alt="Product details icon 1" />
+                        </div>
+                    </div>
+                </article>
+
+                
+            </section>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="tab-bar">
+            <div class="tab-item active" onclick="GoTo(0)" data-tab="home"><img src="image/Shape (3).png" /></div>
+            <div class="tab-item" onclick="GoTo(1)" data-tab="discover"><img src="image/Group 9.png" /></div>
+            <div class="tab-item" onclick="GoTo(2)" data-tab="mine"><img src="image/Shape (2).png" /></div>
+            <div class="tab-item" onclick="GoTo(3)" data-tab="discover"><img src="image/Shape (1).png" /></div>
+            <div class="tab-item" onclick="GoTo(4)" data-tab="mine"><img src="image/Shape.png" /></div>
+        </div>
+    </footer>
+</body>
+
+</html>

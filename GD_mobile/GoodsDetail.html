@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GD Games</title>    
+    <link rel="stylesheet" href="css/common.css">
+    <script src="js/common.js"></script>
+    <link rel="stylesheet" href="css/goodDetails.css">
+    <script src="js/goodDetails.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="sidebar" id="sidebar">
+            <button id="sidebarToggle"></button>
+            <div class="sidebar-content">
+              <div class="s-img">
+                <image class="timg" src="image/logo.png"></image>
+              </div>
+              <div class="hmiddle">
+                <nav>
+                  <ul>
+                    <li class='sidebar-item'><a href="Home.html" style="font-weight: 900;">HOME</a></li>
+                    <li class='sidebar-item'><a href="Game.html">GAMES</a></li>
+                    <li class='sidebar-item'><a href="#">CONSOLES</a></li>
+                    <li class='sidebar-item'><a href="#">NEWS</a></li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="action-icon">
+                <img src="image/upDown.svg" alt="Compare icon">
+                <span>Compare</span>
+              </div>
+              <div class="action-icon">
+                <img src="image/question.svg" alt="Ask a question icon">
+                <span>Ask a question</span>
+              </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">  
+            <image class="timg" src="image/logo.png"></image>          
+            <section class="main-content">
+                <div class="left-col">
+                    <div class="image-list">
+                        <!-- Image List -->
+                        <image src="image/cart-img11.png" class="thumbnail" alt="Image 1" data-full="image/cart-img11.png" />
+                        <image src="image/cart-img1.png" class="thumbnail" alt="Image 1" data-full="image/cart-img1.png" />
+                        <image src="image/cart-img12.png" class="thumbnail" alt="Image 1" data-full="image/cart-img12.png" />
+                        <image src="image/cart-img13.png" class="thumbnail" alt="Image 1" data-full="image/cart-img13.png" />
+                        <image src="image/cart-img14.png" class="thumbnail" alt="Image 1" data-full="image/cart-img14.png" />
+                        <image src="image/cart-img15.png" class="thumbnail" alt="Image 1" data-full="image/cart-img15.png" />
+                        <!-- More Image -->
+                    </div>
+                    <div class="image-display">
+                        <!-- Large Image Display Area -->
+                        <image src="image/cart-img1.png" alt="" id="full-image" class="full-image">
+                    </div>  
+                </div>
+                <div class="right-col">
+                    <div class="product-info">
+                        <h2 class="label">Playstation</h2>
+                        <h1 class="product-title">Cyberpunk 2077</h1>
+                        <div class="rating">
+                            <img src="image/star-black.svg" alt="Rating stars" class="rating-icon">
+                            <div class="review-count">
+                                <span class="review-count-text">(</span>
+                                <span class="review-number">3</span>
+                                <span class="review-count-text">)</span>
+                            </div>
+                        </div>
+                        <div class="price">$59.00</div>
+                        <div class="stock-info">
+                            <img src="image/eye.svg" alt="Stock icon" class="stock-icon">
+                            <div class="stock-message">24 people are viewing this right now</div>
+                        </div>
+                        <div class="remaining-items">
+                            <span>Only</span> 
+                            <strong>9</strong>
+                            <span>item(s) left in stock!</span>
+                        </div>
+                        <div class="stock-bar-container">
+                            <div class="stock-bar"></div>
+                        </div>
+                        <label class="quantity-label" for="quantity">Quantity</label>
+                        <div class="add-to-cart">
+                            <div class="quantity-controls" style="border: 1px solid #ddd;">
+                                <button class="decrease" >-</button>
+                                <input type="number" style="border: none;" id="quantity" value="1" min="1" readonly>
+                                <button class="increase">+</button>
+                            </div>
+                            <button class="cart-button" onclick="openCart()">Add to cart</button>
+                        </div>
+                        <div class="action-icons">
+                            <div class="action-icon-item">
+                                <img src="image/upDown.svg" alt="Compare icon">
+                                <span>Compare</span>
+                            </div>
+                            <div class="action-icon-item">
+                                <img src="image/question.svg" alt="Ask a question icon">
+                                <span>Ask a question</span>
+                            </div>
+                            <div class="action-icon-item">
+                                <img src="image/share.svg" alt="Share icon">
+                                <span>Share</span>
+                            </div>
+                        </div>
+                        <div class="delivery">
+                            <img src="image/car.svg" alt="Delivery icon">
+                            <div class="delivery-details">
+                                <span class="delivery-estimate">Estimated Delivery:</span>
+                                <span class="delivery-date">Jul 30 - Aug 03</span>
+                            </div>
+                        </div>
+                        <div class="delivery">
+                        <!-- <div class="shipping-info"> -->
+                            <img src="image/box.svg" alt="Shipping icon">
+                            <!-- <span class="delivery-estimate">Free Shipping & Returns:</span>
+                            <span class="delivery-date">On all orders over $75</span> -->
+                            <div>Free Shipping & Returns: On all orders over $75</div>
+                        </div>
+                         <div class="shipping-logo">
+                            <img src="image/banks.png" alt="Guarantee safe & secure checkout">         
+                            <div>Guarantee safe & secure checkout</div>
+                        </div> 
+                    </div>
+                    
+                </div>
+            </section>
+
+    </main>
+
+    <footer>
+        <div class="tab-bar">
+            <div class="tab-item active" onclick="GoTo(0)" data-tab="home"><img src="image/Shape (3).png" /></div>
+            <div class="tab-item" onclick="GoTo(1)" data-tab="discover"><img src="image/Group 9.png" /></div>
+            <div class="tab-item" onclick="GoTo(2)" data-tab="mine"><img src="image/Shape (2).png" /></div>
+            <div class="tab-item" onclick="GoTo(3)" data-tab="discover"><img src="image/Shape (1).png" /></div>
+            <div class="tab-item" onclick="GoTo(4)" data-tab="mine"><img src="image/Shape.png" /></div>
+        </div>
+    </footer>
+</body>
+
+</html>

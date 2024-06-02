@@ -1,0 +1,153 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    /* background-color: #f7f6f6; */
+    /* margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5px; */
+}
+
+/* Header Styles */
+
+
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    left: -210px;
+    /* Start off the screen */
+    transition: left 0.3s;
+    /* background-color: #f9f9f9; */
+    border-radius: 10px;
+    background-color: #fff;
+    /* box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1); */
+    box-shadow: none;
+}
+
+.sidebar-content {
+    padding: 15px;
+}
+
+#sidebarToggle {
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #fff;
+    color: #333;
+    border: none;
+    position: absolute;
+    right: 10px;
+    top: 0;
+    cursor: pointer;
+    margin-top: 10px;    
+    background-image: url('../image/open.png');
+    background-position: center center;
+    /* Horizontal and vertical center */
+    background-repeat: no-repeat;
+    /* Background images are not repeated */
+    background-size: 100%;
+    width: 30px;
+    font-size: 20px;
+}
+
+.sidebar-content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+
+}
+
+.hmiddle {
+    margin-bottom: 150px;
+}
+
+.s-img {
+    margin-top: 20%;
+}
+
+.s-img img {
+    width: 60%;
+}
+
+nav ul {
+    float: left;
+    margin-top: 22px;
+    margin-right: 50px;
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 50px;
+    height: 30px;
+    /* background: black; */
+    color: #000;
+    border-radius: 10px;
+    line-height: 30px;
+    width: 100%;
+    padding: 10px;
+}
+
+nav ul li a {
+    font-size: 12px;
+    color: inherit;
+    text-decoration: none;
+}
+
+.sidebar li.active {
+    background-color: #000;
+    color: #fff;
+}
+
+.action-icon {
+    height: 30px;
+    text-align: left;
+    font-size: 13px;
+    padding: 5px;
+}
+.action-icon img{
+    height: 12px;
+    width: 20px;
+}
+
+.timg {
+    width: 50%;
+}
+
+
+ /*bottom*/
+ footer {
+    float: left;
+    height: 100px;
+    margin-top: 5px;
+    width: 100%;
+    background-color: #fff;
+    bottom: 0px;
+  }
+  .tab-bar {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+  }
+  
+  .tab-item {
+    flex: 1;
+    text-align: center;
+    padding: 10px 0;
+    cursor: pointer;
+    color: #666;
+    border-top: 2px solid transparent;
+  }
+  .tab-item img{
+    width: 25px;
+    height: 25px;
+
+  }
+  .tab-item.active {
+    color: #007aff;
+    border-top: 2px solid #666;
+  }
+  

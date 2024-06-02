@@ -1,0 +1,274 @@
+
+/* content */
+main {
+    height: auto;
+    margin-top: 5px;
+    margin-left: 5%;
+    width: 90%;
+    text-align: center;
+    float: left;
+    background-color: #fff;
+}
+
+.container {
+    width: 90%;
+}
+
+.left-col {   
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 991px) {
+    .left-col {
+        flex-wrap: wrap;
+    }
+}
+
+.right-col {
+    margin-top: 14px;   
+    width: 100%;
+    padding: 0 20px;
+    float: left;
+    text-align: left;
+    font-size: 12px;
+    /* border-left: 1px solid rgba(0, 0, 0, 0.39); */
+}
+
+@media (max-width: 991px) {
+    .right-col {
+        max-width: 100%;
+    }
+}
+
+.image-display {
+    width: 75%;
+    float: left;
+}
+
+.image-display img {
+    width: 90%;
+    height: 250px;
+    margin-top: 10%;
+}
+
+.image-list {
+    width: 25%;
+    float: left;
+}
+
+.image-list img {
+    width: 50%;
+    text-align: center;
+    height: 45px;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+@media (max-width: 991px) {
+    .product-info {
+        width: 100%;
+    }
+}
+
+.label {
+    color: #8a8a8a;
+    text-transform: uppercase;
+    font-size: 10px;
+    margin-top: 5px;
+}
+
+.product-title {
+    color: #000;
+    margin-top: 1px;
+    font-size: 13px;
+}
+
+.rating {
+    display: flex;
+    font-size: 10px;
+    color: #000;
+    gap: 8px;
+    margin-top: 5px;
+}
+
+.rating-icon {
+    width: 55px;
+    height: auto;
+}
+
+.review-count {
+    display: flex;
+    gap: 2px;
+}
+
+.review-count-text {
+    font-family: 'Inter', sans-serif;
+}
+
+.review-number {
+    font-family: 'Jost', sans-serif;
+}
+
+.price {
+    color: #000;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.stock-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #8a8a8a;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.stock-icon {
+    width: 15px;
+}
+
+.stock-message {
+    font-family: 'Inter', sans-serif;
+}
+
+.remaining-items {
+    color: #666;
+    margin-top: 20px;
+    font-size: 12px;
+    font-family: 'Jost', sans-serif;
+}
+
+.stock-bar {
+    background-color: #ef2d2d;
+    height: 5px;
+}
+
+.quantity-label {
+    color: #000;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.add-to-cart {
+    display: flex;
+    gap: 20px;
+    margin-top: 16px;
+    font-size: 12px;
+}
+
+.cart-button {
+    border: 1px solid rgba(0, 0, 0, 1);
+    border-radius: 5px;
+    padding: 11px 60px;
+}
+
+@media (max-width: 991px) {
+    .cart-button {
+        padding: 0 20px;
+    }
+}
+.quantity{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    border: 1px solid #8a8a8a;
+
+}
+
+.quantity-controls button {
+    width: 20px;
+    height: 30px;
+    border: 0px solid #ddd;
+    background-color: #fff;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.quantity-controls input[type="number"] {
+    width: 30px;
+    text-align: center;
+    border: 1px solid #ddd;
+    font-size: 12px;
+}
+
+.action-icons {
+    display: flex;
+    /* gap: 20px; */
+    justify-content: center;
+    margin-top: 42px;
+}
+
+.action-icon-item {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    white-space: nowrap;
+    padding: 5px 8px;
+}
+
+.action-icon-item img {
+    width: 14px;
+    height: 14px;
+}
+
+.action-icon-item span {
+    font-family: 'Jost', sans-serif;
+}
+
+.delivery {
+    display: flex;
+    gap: 7px;
+    color: #000;
+    margin-top: 10px;
+}
+
+.delivery-icon {
+    width: 20px;
+}
+
+.delivery-details {
+    display: flex;
+    gap: 2px;
+}
+
+.delivery-estimate {
+    font-family: 'Volkhov', sans-serif;
+    font-weight: 700;
+}
+
+.delivery-date {
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+}
+
+.shipping-info {
+    display: flex;
+    gap: 9px;
+    font-size: 16px;
+    margin-top: 11px;
+}
+
+.shipping-icon {
+    width: 16px;
+}
+
+.shipping-logo {
+    width: 95%;
+    background-color:#f7f6f6;
+    margin-top: 20px;
+    text-align: center;
+    color: #8a8a8a;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.shipping-logo img {
+    margin-top: 20px;
+    width: 50%;
+}
